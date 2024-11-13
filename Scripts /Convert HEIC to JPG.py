@@ -24,7 +24,7 @@ def heic_to_jpeg(input_folder, output_folder):
             
             #Save as JPG
             image.save(jpeg_path, "JPEG")
-            print(f"Konvertiert: {filename} -> {jpeg_path}")
+            print(f"Converted: {filename} -> {jpeg_path}")
 
 #Call the method
 input_folder = '<Source path of your HEIC files>'  
