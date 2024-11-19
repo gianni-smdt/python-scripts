@@ -3,7 +3,7 @@ import os
 from PIL import Image
 import pyheif 
 
-#Method to convert the HEIC file tp JPG
+#Method to convert the HEIC file to JPG
 def heic_to_jpeg(input_folder, output_folder):
     
     for filename in os.listdir(input_folder):
