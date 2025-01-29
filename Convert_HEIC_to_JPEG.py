@@ -3,9 +3,8 @@ import os
 from PIL import Image
 import pyheif 
 
-#Method to convert the HEIC file to JPG
-def heic_to_jpeg(input_folder, output_folder):
-    
+#Method to convert the HEIC file to JPEG
+def heic_to_jpeg(input_folder, output_folder):   
     for filename in os.listdir(input_folder):
         if filename.lower().endswith('.heic'):
             heic_path = os.path.join(input_folder, filename)
@@ -22,7 +21,7 @@ def heic_to_jpeg(input_folder, output_folder):
                 heif_file.stride
             )
             
-            #Save as JPG
+            #Save as JPEG
             image.save(jpeg_path, "JPEG")
             print(f"Converted: {filename} -> {jpeg_path}")
 
